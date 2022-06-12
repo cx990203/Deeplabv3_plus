@@ -7,7 +7,12 @@ Deeplabv3+语义分割网络
 ## 工程目录说明
 main</br>
 |----model &emsp; —— &emsp; 存放模型用文件</br>
+&emsp;&emsp;|----backbone.py &emsp; —— &emsp; 模型主干特征提取网络文件</br>
+&emsp;&emsp;|----deeplabv3.py &emsp; —— &emsp; deeplabv3模型文件</br>
 |----utils &emsp; —— &emsp; 存放一些工具函数</br>
+&emsp;&emsp;|----loss.py &emsp; —— &emsp; 损失函数</br>
+&emsp;&emsp;|----dataloader.py &emsp; —— &emsp; 数据集加载相关文件</br>
+&emsp;&emsp;|----utils.py &emsp; —— &emsp; 一些其他工具类API文件</br>
 config.json &emsp; —— &emsp; 训练/预测配置文件</br>
 predict.py &emsp; —— &emsp; 预测脚本</br>
 road.jpg &emsp; —— &emsp; 预测测试图片</br>
