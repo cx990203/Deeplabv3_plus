@@ -128,7 +128,7 @@ def main():
             val_loss.append(sum(loss_avg) / len(loss_avg))
             cor.append(sum(source_avg) / len(source_avg))
         # 绘制损失曲线图像并保存
-        plt.figure()
+        plt.figure(0)
         plt.plot(range(epoch + 1), train_loss, 'r--', label='train loss')        # 绘制训练损失
         plt.plot(range(epoch + 1), val_loss, 'b--', label='val loss')            # 绘制验证损失
         plt.plot(range(epoch + 1), cor, 'g--', label='cor')                      # 绘制正确率
@@ -136,6 +136,7 @@ def main():
         plt.xlabel('epoch')
         plt.ylabel('loss')
         plt.savefig(f'{para_save_path}/loss.png', dpi=300)
+        plt.close(0)
 
 
 if __name__ == '__main__':
