@@ -1,0 +1,21 @@
+{
+  "train": {
+    "para_path": "",
+    "num_class": 2,
+    "datasets_path": "D:/AIModels/datasets/RoadIdentification/target",
+    "class": ["background", "road"],
+    "batch_size": 8,
+    "input_size":[256, 256],
+    "num_workers": 4,
+    "train_epoch": 200,
+    "device": "0"
+  },
+  "predict": {
+    "num_class": 2,
+    "class": ["background", "road"],
+    "input_size": [256, 256],
+    "device": "0",
+    "para_path": "./best.pth",
+    "test_input": "./road.jpg"
+  }
+}
