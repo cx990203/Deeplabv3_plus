@@ -14,6 +14,6 @@ road.jpg &emsp; —— &emsp; 预测测试图片</br>
 train.py &emsp; —— &emsp; 训练脚本</br>
 ## 模型训练损失/验证损失/测试正确率
 ![loss](https://user-images.githubusercontent.com/77096562/173211877-8044588e-a728-49be-8788-45c7f6cbe161.png)</br>
-train &nbsp; loss &emsp; —— &emsp; 训练损失</br>
-val &nbsp; loss &emsp; —— &emsp; 验证损失</br>
+train&nbsp;loss &emsp; —— &emsp; 训练损失</br>
+val&nbsp;loss &emsp; —— &emsp; 验证损失</br>
 cor &emsp; —— &emsp; 验证准确率</br>
