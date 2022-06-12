@@ -1,6 +1,7 @@
 # Deeplabv3_plus
 Deeplabv3+语义分割网络</br>
 配置都写在config.json文件当中</br>
+网络采用pytorch框架进行编写</br>
 ## 测试文件演示
 左边为输入图片[256, 256]，右边为预测输出图片[256, 256]</br>
 ![road](https://user-images.githubusercontent.com/77096562/173211851-ace636a2-5fcb-4b7b-bc3a-696d7e067e2a.jpg)
