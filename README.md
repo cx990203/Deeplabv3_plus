@@ -24,3 +24,8 @@ train.py &emsp; —— &emsp; 训练脚本</br>
 train&nbsp;loss &emsp; —— &emsp; 训练损失</br>
 val&nbsp;loss &emsp; —— &emsp; 验证损失</br>
 cor &emsp; —— &emsp; 验证准确率</br>
+## 模型详细结构示意图
+![image](https://user-images.githubusercontent.com/77096562/173212818-87605b81-c577-4d99-9a69-485f4fb6207d.png)
+![image](https://user-images.githubusercontent.com/77096562/173212832-87a8263b-f139-4c41-8c41-c11f4467dfd3.png)
+![image](https://user-images.githubusercontent.com/77096562/173212868-b12fe62a-97ff-4d42-a2a8-e0c417ec7282.png)
+![image](https://user-images.githubusercontent.com/77096562/173212961-73c305e0-b881-4422-b2ce-d2f8530495df.png)
