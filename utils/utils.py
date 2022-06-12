@@ -49,7 +49,6 @@ def ImageResize(img: np.ndarray, h, w) -> np.ndarray:
     value = [0, 0, 0] if len(img.shape) == 3 else [0]
     img = cv2.copyMakeBorder(img, h_adds, h_adds, w_adds, w_adds, cv2.BORDER_CONSTANT, value=value)
     # 图像转换
-    cv2.cvtColor(img, cv2.COLOR_BGR2RGB, img)
     img = cv2.resize(img, (w, h))
     return img
 
