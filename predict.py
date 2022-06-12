@@ -6,6 +6,7 @@ import torch
 from PIL import Image
 import copy
 from torch.nn import functional as F
+from utils.utils import ImageResize
 
 
 def main():
@@ -39,6 +40,7 @@ def main():
         raw_image = copy.deepcopy(image)
         # Image -> numpy
         image = np.array(image, np.float32)
+        image = ImageResize(image, input_size[0], input_size[1])
         image = np.transpose(normalize_input(image), [2, 0, 1])
         image = np.expand_dims(image, 0)
         image = torch.from_numpy(image)
