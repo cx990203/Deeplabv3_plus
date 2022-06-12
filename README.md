@@ -23,7 +23,7 @@ train.py &emsp; —— &emsp; 训练脚本</br>
 ![loss](https://user-images.githubusercontent.com/77096562/173211877-8044588e-a728-49be-8788-45c7f6cbe161.png)</br>
 train&nbsp;loss &emsp; —— &emsp; 训练损失</br>
 val&nbsp;loss &emsp; —— &emsp; 验证损失</br>
-cor &emsp; —— &emsp; 验证准确率</br>
+cor &emsp; —— &emsp; 验证准确率（准确率=图片正确的像素总数/图片像素总数）</br>
 ## 模型详细结构示意图
 ![image](https://user-images.githubusercontent.com/77096562/173212818-87605b81-c577-4d99-9a69-485f4fb6207d.png)
 ![image](https://user-images.githubusercontent.com/77096562/173212832-87a8263b-f139-4c41-8c41-c11f4467dfd3.png)
