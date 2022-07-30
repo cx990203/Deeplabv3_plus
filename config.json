@@ -2,7 +2,7 @@
   "train": {
     "para_path": "",
     "num_class": 2,
-    "datasets_path": "D:/AIModels/datasets/RoadIdentification/target",
+    "datasets_path": "D:\\AIModel\\dataset\\RoadIdentification\\target",
     "class": ["background", "road"],
     "batch_size": 8,
     "input_size":[256, 256],
@@ -16,6 +16,16 @@
     "input_size": [256, 256],
     "device": "0",
     "para_path": "./best.pth",
-    "test_input": "./road.jpg"
+    "test_input": "./_road.jpg"
+  },
+  "val": {
+    "num_class": 2,
+    "class": ["background", "road"],
+    "input_size": [256, 256],
+    "device": "0",
+    "para_path": "./best.pth",
+    "src_path": "D:\\AIModel\\dataset\\RoadIdentification\\target\\JPEGImages",
+    "label_path": "D:\\AIModel\\dataset\\RoadIdentification\\target\\SegmentationClassPNG",
+    "save_path": "./result"
   }
 }

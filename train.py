@@ -4,7 +4,7 @@ from utils.dataloader import DeeplabDataloader
 from model.deeplabv3 import Deeplabv3
 from torch.utils.data.dataloader import DataLoader
 from utils.Loss import CE_Loss
-from utils.utils import weights_init, GetSource, LoadConfigFile
+from utils.utils import weights_init, GetSource, LoadConfigFile, IouSource
 import matplotlib.pyplot as plt
 from torch import optim
 from tqdm import tqdm
@@ -103,7 +103,7 @@ def main():
             model.eval()
             source_avg = []
             loss_avg = []
-            for batchidx, batch in enumerate(train_data):
+            for batchidx, batch in enumerate(val_data):
                 # 导出数据
                 x, label = batch
                 x, label = x.to(device), label.to(device)
