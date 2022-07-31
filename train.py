@@ -51,7 +51,6 @@ def main():
     val_data = DataLoader(val_dataset, shuffle=True, batch_size=batch_size, num_workers=num_workers, pin_memory=True)
     # 设置优化器
     opt = optim.SGD(model.parameters(), 4e-4, momentum=0.9, nesterov=True, weight_decay=1e-4)
-
     # 训练前输出相关信息
     print(f"device: {device}")
     # 模型训练
@@ -117,14 +116,14 @@ def main():
                     valloss_best = loss.item()
                     torch.save(model.state_dict(), f'{para_save_path}/best.pth')
                 # 计算得分
-                source_avg.append(GetSource(pred, label))
+                source_avg.append(IouSource(pred, label))
                 # 进度条更新
                 pbar.set_postfix(**{
                     'loss': loss.item(),
-                    'cor': source_avg[-1]
+                    'iou-source': source_avg[-1]
                 })
                 pbar.update(1)
-            print(f'val::epoch: {epoch + 1}  avg loss: {sum(loss_avg) / len(loss_avg)}  cor: {sum(source_avg) / len(source_avg)}')
+            print(f'val::epoch: {epoch + 1}  avg loss: {sum(loss_avg) / len(loss_avg)}  iou-source: {sum(source_avg) / len(source_avg)}')
             val_loss.append(sum(loss_avg) / len(loss_avg))
             cor.append(sum(source_avg) / len(source_avg))
         # 绘制损失曲线图像并保存
