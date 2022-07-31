@@ -6,7 +6,7 @@ Deeplabv3+语义分割网络</br>
 左边为输入图片[256, 256]，右边为预测输出图片[256, 256]</br>
 ![road](https://user-images.githubusercontent.com/77096562/173211851-ace636a2-5fcb-4b7b-bc3a-696d7e067e2a.jpg)
 ![tmpeyccgqyj](https://user-images.githubusercontent.com/77096562/173211863-ddfb2e1d-ed94-441c-9204-5405b26fc4a4.PNG)
-训练数据集链接：</br>
+## 训练数据集链接
 链接：https://pan.baidu.com/s/1P68ZbL538a6m73DLG2LHdQ </br>
 提取码：7969 </br>
 ## 工程目录说明
