@@ -25,7 +25,7 @@ config.json &emsp; —— &emsp; 训练/预测配置文件</br>
 predict.py &emsp; —— &emsp; 预测脚本</br>
 road.jpg &emsp; —— &emsp; 预测测试图片</br>
 train.py &emsp; —— &emsp; 训练脚本</br>
-val.py &emsp; —— &emsp; 验证脚本</br>
+val.py &emsp; —— &emsp; 验证脚本（这个可以不用管，这个脚本是作者在完成作业时候添加的，里面包含了一些white balance处理）</br>
 ## 模型训练损失/验证损失/测试正确率
 ![loss](https://user-images.githubusercontent.com/77096562/173211877-8044588e-a728-49be-8788-45c7f6cbe161.png)</br>
 train&nbsp;loss &emsp; —— &emsp; 训练损失</br>
