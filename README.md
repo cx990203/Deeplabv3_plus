@@ -7,6 +7,9 @@ Deeplabv3+语义分割网络</br>
 ![road](https://user-images.githubusercontent.com/77096562/173211851-ace636a2-5fcb-4b7b-bc3a-696d7e067e2a.jpg)
 ![tmpeyccgqyj](https://user-images.githubusercontent.com/77096562/173211863-ddfb2e1d-ed94-441c-9204-5405b26fc4a4.PNG)
 ## 训练数据集链接
+示例当中采用自主设计的仿真环境中采集的图片作为数据集，随后使用Labelme进行数据集标注。</br>
+![2](https://user-images.githubusercontent.com/77096562/182009686-89c61724-0ec4-4ffb-b783-c9162e1dabd3.jpg)
+![2](https://user-images.githubusercontent.com/77096562/182009687-3ab3963e-3ddb-4c08-ac16-22955106ad0e.png)
 链接：https://pan.baidu.com/s/1P68ZbL538a6m73DLG2LHdQ </br>
 提取码：7969 </br>
 ## 工程目录说明
