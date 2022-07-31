@@ -127,13 +127,13 @@ def IouSource(pred, label) -> list:
         class_idx = np.ones((h, w)) * i + 1             # 判断的类别索引标号
         label_use = label.cpu().numpy().copy()          # tensor -> numpy
         if len(pred_map.shape) == 3 and len(label_use.shape) == 2:
-            # 有时候如果是单张预测的话，会出现维度不一致的问题
+            # 有时候如果是单张预测的话，会出现维度不一致的问题（一般不用管）
             pred_map = pred_map[0, :, :]
         intersection = np.sum((label_use == class_idx) & (pred_map == class_idx))       # 计算交集长度
         union = np.sum((label_use == class_idx) | (pred_map == class_idx))              # 计算并集长度
         source.append(intersection / union)
 
-    return source
+    return sum(source) / len(source)
 
 
 def LoadConfigFile(path='./config.json'):
